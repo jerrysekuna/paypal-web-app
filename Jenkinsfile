@@ -1,7 +1,7 @@
 node{
     def MHD = tool name: "maven3.8.5"
     stage('code'){
-        git branch: 'dev', url: 'https://github.com/jerrysekuna/paypal-web-app'
+        git branch: 'stage', url: 'https://github.com/jerrysekuna/paypal-web-app'
     }
     stage('BUILD'){
        sh "${MHD}/bin/mvn clean package"
